@@ -3,7 +3,7 @@ FROM python:3.9.4-alpine3.13
 ENV \
     LANG=C.UTF-8 \
     LC_ALL=C.UTF-8 \
-    PATH="/root/.poetry/bin:${PATH}" \
+    PATH="/root/.poetry/bin:/.venv/bin:${PATH}" \
     POETRY_URL="https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py" \
     POETRY_HOME="/.venv" \
     POETRY_VERSION="1.1.6" \
